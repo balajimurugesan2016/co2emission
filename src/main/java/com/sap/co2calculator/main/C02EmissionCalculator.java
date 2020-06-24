@@ -3,7 +3,6 @@ import com.sap.transportFactory.TransportFactory;
 
 public class C02EmissionCalculator {
 
-
 	private String[] getcommandlineargs(String[] args) {
 		Integer length = args.length;
 		String[] inputs = new String[length];

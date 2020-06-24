@@ -6,15 +6,37 @@
   <name>C02EmissionCalculator</name>
   <description>Carbondioxide emission calculator</description>
   <dependencies>
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-api</artifactId>
-			<version>5.5.1</version>
-		</dependency>
+<dependency>
+	<groupId>org.junit.jupiter</groupId>
+	<artifactId>junit-jupiter-engine</artifactId>
+	<version>5.2.0</version>
+	<scope>test</scope>
+</dependency>
+<dependency>
+	<groupId>org.junit.platform</groupId>
+	<artifactId>junit-platform-runner</artifactId>
+	<version>1.2.0</version>
+	<scope>test</scope>
+</dependency>
 	</dependencies>
 	<build>
-		<sourceDirectory>main</sourceDirectory>
-		<testSourceDirectory>test</testSourceDirectory>
+		<directory>target</directory>
+    <outputDirectory>target/classes</outputDirectory>
+    <finalName>${project.artifactId}-${project.version}</finalName>
+    <testOutputDirectory>target/test-classes</testOutputDirectory>
+    <sourceDirectory>src/main/java</sourceDirectory>
+    <scriptSourceDirectory>src/main/scripts</scriptSourceDirectory>
+    <testSourceDirectory>src/test/java</testSourceDirectory>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+    </resources>
+    <testResources>
+      <testResource>
+        <directory>src/test/resources</directory>
+      </testResource>
+    </testResources>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -24,6 +46,25 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+
+       <plugin>
+           <groupId>org.apache.maven.plugins</groupId>
+           <artifactId>maven-surefire-plugin</artifactId>
+           <version>2.22.0</version>
+           <dependencies>
+               <dependency>
+                   <groupId>org.junit.platform</groupId>
+                   <artifactId>junit-platform-surefire-provider</artifactId>
+                   <version>1.2.0</version>
+               </dependency>
+           </dependencies>
+           <configuration>
+           	<additionalClasspathElements>
+           		<additionalClasspathElement>src/test/java/</additionalClasspathElement>
+           	</additionalClasspathElements>
+           </configuration>
+       </plugin>   
+			 
 		</plugins>
 	</build>
 </project>
