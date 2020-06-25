@@ -11,8 +11,9 @@
 
 ## **STEPS TO RUN THE APPLICATION**
 
- 1. Unpa
+ 1. Unpack the application from zip and extract.
+ 2. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ0MTI5ODQ5LC03Njk0ODUzMTZdfQ==
+eyJoaXN0b3J5IjpbMTQxNTU1NTk4MywtNzY5NDg1MzE2XX0=
 -->
