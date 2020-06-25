@@ -11,13 +11,17 @@
 
 ## **STEPS TO RUN THE APPLICATION**
 
+**If you prefer command line **
  1. Unpack the application from zip and extract.
  2. Navigate to the main directory where the sources are present,    where you see the POM.xml file
  3. Execute **mvn clean install** or **mvn clean install -DskipTests**(skip tests)  from the command line., This will install dependencies for you(make sure to connect to the internet)
  4. Execute **mvn test** if you want to run the unit test separately 
  5. To execute the program use **mvn exec:java -Dexec.mainClass="com.sap.co2calculator.main.C02EmissionCalculator" -Dexec.args="--transportation-method train --distance 14.5  --output kg"**
  
+**If you prefer eclipse:**
+ 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4ODMyMTQ0NywtNzY5NDg1MzE2XX0=
+eyJoaXN0b3J5IjpbLTExMDAzNjc0ODMsMTQ4ODMyMTQ0NywtNz
+Y5NDg1MzE2XX0=
 -->
