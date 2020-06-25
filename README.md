@@ -13,9 +13,9 @@
 
  1. Unpack the application from zip and extract.
  2. Navigate to the main directory where the sources are present,    where you see the POM.xml file
- 3. Execute **mvn clean install** or   from the command line., This will install dependencies for you(make sure to connect to the internet)
- 4. Execute 
+ 3. Execute **mvn clean install** or **mvn clean install -DskipTests**(skip tests)  from the command line., This will install dependencies for you(make sure to connect to the internet)
+ 4. Execute **mvn clean test** if you want 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mzc1MTU5OTksLTc2OTQ4NTMxNl19
+eyJoaXN0b3J5IjpbLTEwNDU4MjQzODgsLTc2OTQ4NTMxNl19
 -->
