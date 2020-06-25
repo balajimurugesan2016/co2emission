@@ -23,10 +23,10 @@
   2. File -> Import->project as a maven project.
   3. Once imported right click -> select run and select maven clean.
   4. Select maven install to install dependencies
-  5. Select maven test to run the unit tests or 
-  6. if you want to run the application right click and 
+  5. Select maven test to run the unit tests or run Junit Test
+  6. if you want to run the application right click run 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTA4Nzk0MDcsLTEyMjUxNDM5NDksMT
-k2ODc3MjMyNSwtMTEwMDM2NzQ4M119
+eyJoaXN0b3J5IjpbLTkzNzYyNzkyNCwtMTIyNTE0Mzk0OSwxOT
+Y4NzcyMzI1LC0xMTAwMzY3NDgzXX0=
 -->
