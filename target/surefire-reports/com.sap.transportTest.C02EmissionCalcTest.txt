@@ -1,24 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.sap.transportTest.C02EmissionCalcTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.109 s <<< FAILURE! - in com.sap.transportTest.C02EmissionCalcTest
-mediumdieselcartest  Time elapsed: 0.074 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <2.6kg> but was: <2.6>
-	at com.sap.transportTest.C02EmissionCalcTest.mediumdieselcartest(C02EmissionCalcTest.java:16)
-
-trainmeteroutputkgtest  Time elapsed: 0.004 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <0.1kg> but was: <87.0>
-	at com.sap.transportTest.C02EmissionCalcTest.trainmeteroutputkgtest(C02EmissionCalcTest.java:40)
-
-dieselcarequalstotest  Time elapsed: 0.003 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <2.6kg> but was: <2.6>
-	at com.sap.transportTest.C02EmissionCalcTest.dieselcarequalstotest(C02EmissionCalcTest.java:49)
-
-largepetrolcartest  Time elapsed: 0.004 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <507.7kg> but was: <507.7>
-	at com.sap.transportTest.C02EmissionCalcTest.largepetrolcartest(C02EmissionCalcTest.java:24)
-
-trainmetertest  Time elapsed: 0.001 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <87g> but was: <87.0>
-	at com.sap.transportTest.C02EmissionCalcTest.trainmetertest(C02EmissionCalcTest.java:32)
-
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.105 s - in com.sap.transportTest.C02EmissionCalcTest
