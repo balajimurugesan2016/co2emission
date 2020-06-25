@@ -1,69 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.sap.transportTest.C02EmissionCalcTest" time="0.161" tests="5" errors="0" skipped="0" failures="5">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.sap.transportTest.C02EmissionCalcTest" time="0.109" tests="5" errors="0" skipped="0" failures="5">
   <properties>
-    <property name="sun.desktop" value="gnome"/>
-    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="file.encoding.pkg" value="sun.io"/>
     <property name="java.specification.version" value="1.8"/>
-    <property name="sun.cpu.isalist" value=""/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/home/vagrant/co2emission/target/test-classes:/home/vagrant/co2emission/target/classes:/home/vagrant/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.2.0/junit-jupiter-engine-5.2.0.jar:/home/vagrant/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/vagrant/.m2/repository/org/junit/platform/junit-platform-engine/1.2.0/junit-platform-engine-1.2.0.jar:/home/vagrant/.m2/repository/org/junit/platform/junit-platform-commons/1.2.0/junit-platform-commons-1.2.0.jar:/home/vagrant/.m2/repository/org/opentest4j/opentest4j/1.1.0/opentest4j-1.1.0.jar:/home/vagrant/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.2.0/junit-jupiter-api-5.2.0.jar:/home/vagrant/.m2/repository/org/junit/platform/junit-platform-runner/1.2.0/junit-platform-runner-1.2.0.jar:/home/vagrant/.m2/repository/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.jar:/home/vagrant/.m2/repository/org/junit/platform/junit-platform-suite-api/1.2.0/junit-platform-suite-api-1.2.0.jar:/home/vagrant/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/vagrant/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:src/test/java/:"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\I340782\co2emission\target\test-classes;C:\Users\I340782\co2emission\target\classes;C:\Users\I340782\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.2\junit-jupiter-engine-5.6.2.jar;C:\Users\I340782\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\I340782\.m2\repository\org\junit\platform\junit-platform-engine\1.6.2\junit-platform-engine-1.6.2.jar;C:\Users\I340782\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\I340782\.m2\repository\org\junit\platform\junit-platform-commons\1.6.2\junit-platform-commons-1.6.2.jar;C:\Users\I340782\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.2\junit-jupiter-api-5.6.2.jar;C:\Users\I340782\.m2\repository\org\junit\platform\junit-platform-runner\1.6.2\junit-platform-runner-1.6.2.jar;C:\Users\I340782\.m2\repository\junit\junit\4.13\junit-4.13.jar;C:\Users\I340782\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\I340782\.m2\repository\org\junit\platform\junit-platform-launcher\1.6.2\junit-platform-launcher-1.6.2.jar;C:\Users\I340782\.m2\repository\org\junit\platform\junit-platform-suite-api\1.6.2\junit-platform-suite-api-1.6.2.jar;src/test/java/;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="user.timezone" value=""/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
     <property name="java.vm.specification.version" value="1.8"/>
-    <property name="os.name" value="Linux"/>
+    <property name="os.name" value="Windows 10"/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.boot.library.path" value="/home/vagrant/apps/java/jre/lib/amd64"/>
-    <property name="sun.java.command" value="/home/vagrant/co2emission/target/surefire/surefirebooter1497633223907544971.jar /home/vagrant/co2emission/target/surefire 2020-06-24T14-51-22_121-jvmRun1 surefire8458538789761892782tmp surefire_0568790071159232387tmp"/>
-    <property name="surefire.test.class.path" value="/home/vagrant/co2emission/target/test-classes:/home/vagrant/co2emission/target/classes:/home/vagrant/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.2.0/junit-jupiter-engine-5.2.0.jar:/home/vagrant/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/vagrant/.m2/repository/org/junit/platform/junit-platform-engine/1.2.0/junit-platform-engine-1.2.0.jar:/home/vagrant/.m2/repository/org/junit/platform/junit-platform-commons/1.2.0/junit-platform-commons-1.2.0.jar:/home/vagrant/.m2/repository/org/opentest4j/opentest4j/1.1.0/opentest4j-1.1.0.jar:/home/vagrant/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.2.0/junit-jupiter-api-5.2.0.jar:/home/vagrant/.m2/repository/org/junit/platform/junit-platform-runner/1.2.0/junit-platform-runner-1.2.0.jar:/home/vagrant/.m2/repository/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.jar:/home/vagrant/.m2/repository/org/junit/platform/junit-platform-suite-api/1.2.0/junit-platform-suite-api-1.2.0.jar:/home/vagrant/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/vagrant/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:src/test/java/:"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\I340782\AppData\Local\Temp\surefire6200850120264333102\surefirebooter8291481707454823441.jar C:\Users\I340782\AppData\Local\Temp\surefire6200850120264333102 2020-06-25T12-25-02_859-jvmRun1 surefire2691381037627531005tmp surefire_08422554086066927992tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\I340782\co2emission\target\test-classes;C:\Users\I340782\co2emission\target\classes;C:\Users\I340782\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.2\junit-jupiter-engine-5.6.2.jar;C:\Users\I340782\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\I340782\.m2\repository\org\junit\platform\junit-platform-engine\1.6.2\junit-platform-engine-1.6.2.jar;C:\Users\I340782\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\I340782\.m2\repository\org\junit\platform\junit-platform-commons\1.6.2\junit-platform-commons-1.6.2.jar;C:\Users\I340782\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.2\junit-jupiter-api-5.6.2.jar;C:\Users\I340782\.m2\repository\org\junit\platform\junit-platform-runner\1.6.2\junit-platform-runner-1.6.2.jar;C:\Users\I340782\.m2\repository\junit\junit\4.13\junit-4.13.jar;C:\Users\I340782\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\I340782\.m2\repository\org\junit\platform\junit-platform-launcher\1.6.2\junit-platform-launcher-1.6.2.jar;C:\Users\I340782\.m2\repository\org\junit\platform\junit-platform-suite-api\1.6.2\junit-platform-suite-api-1.6.2.jar;src/test/java/;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/home/vagrant"/>
+    <property name="user.home" value="C:\Users\I340782"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.home" value="/home/vagrant/apps/java/jre"/>
-    <property name="basedir" value="/home/vagrant/co2emission"/>
-    <property name="file.separator" value="/"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_161\jre"/>
+    <property name="basedir" value="C:\Users\I340782\co2emission"/>
+    <property name="file.separator" value="\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/vagrant/co2emission/target/surefire/surefirebooter1497633223907544971.jar"/>
-    <property name="sun.boot.class.path" value="/home/vagrant/apps/java/jre/lib/resources.jar:/home/vagrant/apps/java/jre/lib/rt.jar:/home/vagrant/apps/java/jre/lib/sunrsasign.jar:/home/vagrant/apps/java/jre/lib/jsse.jar:/home/vagrant/apps/java/jre/lib/jce.jar:/home/vagrant/apps/java/jre/lib/charsets.jar:/home/vagrant/apps/java/jre/lib/jfr.jar:/home/vagrant/apps/java/jre/classes"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\I340782\AppData\Local\Temp\surefire6200850120264333102\surefirebooter8291481707454823441.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_161\jre\classes"/>
+    <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="1.8.0_162-b12"/>
-    <property name="user.name" value="vagrant"/>
-    <property name="path.separator" value=":"/>
-    <property name="os.version" value="4.15.0-70-generic"/>
-    <property name="java.endorsed.dirs" value="/home/vagrant/apps/java/jre/lib/endorsed"/>
+    <property name="java.runtime.version" value="1.8.0_161-b12"/>
+    <property name="user.name" value="I340782"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\endorsed"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="file.encoding" value="UTF-8"/>
+    <property name="file.encoding" value="Cp1252"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="localRepository" value="/home/vagrant/.m2/repository"/>
+    <property name="localRepository" value="C:\Users\I340782\.m2\repository"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="/tmp"/>
-    <property name="java.version" value="1.8.0_162"/>
-    <property name="user.dir" value="/home/vagrant/co2emission"/>
+    <property name="java.io.tmpdir" value="C:\Users\I340782\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_161"/>
+    <property name="user.dir" value="C:\Users\I340782\co2emission"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
-    <property name="sun.os.patch.level" value="unknown"/>
-    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Cloud Foundry;C:\ProgramData\chocolatey\bin;C:\Program Files\PostgreSQL\10\bin;C:\Program Files\PuTTY\;C:\Users\I340782\AppData\Local\Continuum\Anaconda2;C:\Users\I340782\AppData\Local\Continuum\Anaconda2\Scripts;C:\Users\I340782\AppData\Local\Continuum\Anaconda2\Library\bin;C:\Users\I340782\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\I340782\AppData\Local\Programs\Python\Python36-32\;C:\Users\I340782\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Users\I340782\AppData\Local\atom\bin;C:\Program Files\Apache Software Foundation\apache-maven-3.6.0\bin;C:\Program Files\JetBrains\PyCharm 2018.3.2\bin;;C:\Users\I340782\AppData\Roaming\npm;C:\IDE\VisualStudio\Microsoft VS Code\bin;C:\Users\I340782\AppData\Local\Yarn\bin;C:\apache-opennlp-1.9.1\bin;C:\Users\I340782\AppData\Local\Microsoft\WindowsApps;C:\Users\I340782\AppData\Local\.meteor;C:\Program Files\PostgreSQL\10\bin;C:\Users\I340782\Desktop\server\glassfish5\glassfish\bin;;."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="25.162-b12"/>
-    <property name="java.ext.dirs" value="/home/vagrant/apps/java/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="java.vm.version" value="25.161-b12"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="mediumdieselcartest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0.044">
+  <testcase name="mediumdieselcartest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0.074">
     <failure message="expected: &lt;2.6kg&gt; but was: &lt;2.6&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <2.6kg> but was: <2.6>
 	at com.sap.transportTest.C02EmissionCalcTest.mediumdieselcartest(C02EmissionCalcTest.java:16)
 ]]></failure>
   </testcase>
-  <testcase name="trainmeteroutputkgtest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0">
+  <testcase name="trainmeteroutputkgtest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0.004">
     <failure message="expected: &lt;0.1kg&gt; but was: &lt;87.0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <0.1kg> but was: <87.0>
 	at com.sap.transportTest.C02EmissionCalcTest.trainmeteroutputkgtest(C02EmissionCalcTest.java:40)
 ]]></failure>
@@ -73,12 +75,12 @@
 	at com.sap.transportTest.C02EmissionCalcTest.dieselcarequalstotest(C02EmissionCalcTest.java:49)
 ]]></failure>
   </testcase>
-  <testcase name="largepetrolcartest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0.008">
+  <testcase name="largepetrolcartest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0.004">
     <failure message="expected: &lt;507.7kg&gt; but was: &lt;507.7&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <507.7kg> but was: <507.7>
 	at com.sap.transportTest.C02EmissionCalcTest.largepetrolcartest(C02EmissionCalcTest.java:24)
 ]]></failure>
   </testcase>
-  <testcase name="trainmetertest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0.019">
+  <testcase name="trainmetertest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0.001">
     <failure message="expected: &lt;87g&gt; but was: &lt;87.0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <87g> but was: <87.0>
 	at com.sap.transportTest.C02EmissionCalcTest.trainmetertest(C02EmissionCalcTest.java:32)
 ]]></failure>
