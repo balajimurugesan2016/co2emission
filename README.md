@@ -25,10 +25,11 @@
   4. Select maven install to install dependencies
   5. Select maven test to run the unit tests or run Junit Test
   6. if you want to run the application right click runAs -> Run Configurations.
-  7. Choose the correct  name C02EmissionCalculator on the left pane 
-  8. On the right pane add the program arguments 
+  7. Choose the correct  name C02EmissionCalculator on the left pane.
+  8. On the right pane add the program arguments    **"--transportation-method train --distance 14.5  --output kg"**. and select 
+  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjExNDYyMDQsLTEyMjUxNDM5NDksMT
-k2ODc3MjMyNSwtMTEwMDM2NzQ4M119
+eyJoaXN0b3J5IjpbMTQ5ODEyODcwMywtMTIyNTE0Mzk0OSwxOT
+Y4NzcyMzI1LC0xMTAwMzY3NDgzXX0=
 -->
