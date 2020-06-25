@@ -19,9 +19,11 @@
  5. To execute the program use **mvn exec:java -Dexec.mainClass="com.sap.co2calculator.main.C02EmissionCalculator" -Dexec.args="--transportation-method train --distance 14.5  --output kg"**
  
 **If you prefer eclipse Dev 2019-12:**
- 1) Open eclipse Dev 2019-12. 
- 2) 
+  1. Open eclipse Dev 2019-12. 
+  2. File -> Import->project as a maven project
+ 3. once imported right click and select maven clean
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2ODc3MjMyNSwtMTEwMDM2NzQ4M119
+eyJoaXN0b3J5IjpbLTE2NTA0NDcxNTEsMTk2ODc3MjMyNSwtMT
+EwMDM2NzQ4M119
 -->
