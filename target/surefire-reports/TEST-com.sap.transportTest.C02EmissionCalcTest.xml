@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.sap.transportTest.C02EmissionCalcTest" time="0.105" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.sap.transportTest.C02EmissionCalcTest" time="0.119" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\I340782\AppData\Local\Temp\surefire6741557772225846861\surefirebooter870415916395825617.jar C:\Users\I340782\AppData\Local\Temp\surefire6741557772225846861 2020-06-25T21-06-38_954-jvmRun1 surefire2669857853278226559tmp surefire_0989730950978252105tmp"/>
+    <property name="sun.java.command" value="C:\Users\I340782\AppData\Local\Temp\surefire2485382832003638787\surefirebooter8129357117192296925.jar C:\Users\I340782\AppData\Local\Temp\surefire2485382832003638787 2020-06-26T00-10-57_858-jvmRun1 surefire4578864069828588781tmp surefire_01050427732504114244tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\I340782\co2emission\target\test-classes;C:\Users\I340782\co2emission\target\classes;C:\Users\I340782\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.2\junit-jupiter-engine-5.6.2.jar;C:\Users\I340782\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\I340782\.m2\repository\org\junit\platform\junit-platform-engine\1.6.2\junit-platform-engine-1.6.2.jar;C:\Users\I340782\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\I340782\.m2\repository\org\junit\platform\junit-platform-commons\1.6.2\junit-platform-commons-1.6.2.jar;C:\Users\I340782\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.2\junit-jupiter-api-5.6.2.jar;C:\Users\I340782\.m2\repository\org\junit\platform\junit-platform-runner\1.6.2\junit-platform-runner-1.6.2.jar;C:\Users\I340782\.m2\repository\junit\junit\4.13\junit-4.13.jar;C:\Users\I340782\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\I340782\.m2\repository\org\junit\platform\junit-platform-launcher\1.6.2\junit-platform-launcher-1.6.2.jar;C:\Users\I340782\.m2\repository\org\junit\platform\junit-platform-suite-api\1.6.2\junit-platform-suite-api-1.6.2.jar;src/test/java/;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\I340782"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\I340782\AppData\Local\Temp\surefire6741557772225846861\surefirebooter870415916395825617.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\I340782\AppData\Local\Temp\surefire2485382832003638787\surefirebooter8129357117192296925.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_161\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,14 +60,16 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="mediumdieselcartest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0.046"/>
-  <testcase name="trainmeteroutputkgtest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0.002"/>
-  <testcase name="dieselcarequalstotest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0.001"/>
-  <testcase name="TestInstancesTransportFactory" classname="com.sap.transportTest.C02EmissionCalcTest" time="0.025"/>
-  <testcase name="trainkmoutputdefgmtest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0"/>
-  <testcase name="trainkmoutputdefkgtest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0"/>
-  <testcase name="trainmeteroutputgramtest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0"/>
-  <testcase name="largepetrolcartest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0.001"/>
-  <testcase name="trainmetertest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0"/>
-  <testcase name="trainkmoutputgmtest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0.001"/>
+  <testcase name="largePetrolCarTest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0.036"/>
+  <testcase name="trainMeterTest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0.003"/>
+  <testcase name="TestInstancesTransportFactory" classname="com.sap.transportTest.C02EmissionCalcTest" time="0.02"/>
+  <testcase name="trainKmOutputDefGmTest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0.001"/>
+  <testcase name="trainKmOutputDefKgTest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0.002"/>
+  <testcase name="dieselcarEqualsToAllTest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0"/>
+  <testcase name="trainKmOutputGmTest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0.001"/>
+  <testcase name="trainMeterOutputGramTest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0"/>
+  <testcase name="mediumDieselCarTest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0.001"/>
+  <testcase name="trainMeterOutputKGTest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0.001"/>
+  <testcase name="illegalvaluesTest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0.001"/>
+  <testcase name="dieselCarEqualsToTest" classname="com.sap.transportTest.C02EmissionCalcTest" time="0.001"/>
 </testsuite>

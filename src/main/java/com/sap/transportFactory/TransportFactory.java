@@ -1,3 +1,8 @@
+/*Class exhibits Factory which produces vehicle instances on demand from the Calculator class
+ * Factory is followed as we have many vehicles of the same type
+* @author  Balaji Vengatesh Murugesan
+* @version 1.0
+* @since   2020-06-25 */
 package com.sap.transportFactory;
 
 import com.sap.transport.car.large.conventional.LargeDieselCar;

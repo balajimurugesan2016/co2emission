@@ -1,3 +1,8 @@
+/*Class calculates the  C02 emissions from different vehicles in service 
+  Class takes inputs via command line and executes it against stored C02 values
+* @author  Balaji Vengatesh Murugesan
+* @version 1.0
+* @since   2020-06-25 */
 package com.sap.co2calculator.main;
 
 import java.util.HashMap;
@@ -6,7 +11,7 @@ import com.sap.transportFactory.TransportFactory;
 
 public class C02EmissionCalculator {
 
-	private HashMap<String, String> getcommandlineargs(String[] args) {
+	private HashMap<String, String> convertInputsToHashMap(String[] args) {
 		Integer length = args.length;
 		HashMap<String, String> inputs = new HashMap<String, String>();
 		int i = 0;
@@ -37,26 +42,9 @@ public class C02EmissionCalculator {
 		}
 	}
 
-	private Double calcuateco2(HashMap<String, String> inputs, TransportFactory tf) {
+	private Double calcuateCo2(HashMap<String, String> inputs, TransportFactory tf) {
 
-		Double co2e = tf.getTransport(inputs.get("--transportation-method")).getCo2e();
-		String uod = inputs.get("--unit-of-distance");
-		if (uod != null && uod.contentEquals("m")) {
-			co2e = co2e / 1000;
-		}
-
-		Double distance = Double.parseDouble(inputs.get("--distance"));
-		if (uod == null || uod.contentEquals("km")) {
-			distance = distance / 1000;
-		}
-
-		return Math.round((distance * co2e) * 10.0) / 10.0;
-
-	}
-
-	private Double calcuateco2foroutput(HashMap<String, String> inputs, TransportFactory tf) {
-
-		Double co2e = tf.getTransport(inputs.get("--transportation-method")).getCo2e();
+		Double co2e = tf.getTransport(inputs.get("--transportation-method")).getco2emission();
 		String output = inputs.get("--output");
 		String uod = inputs.get("--unit-of-distance");
 		Double distance = Double.parseDouble(inputs.get("--distance"));
@@ -74,10 +62,7 @@ public class C02EmissionCalculator {
 			co2e = co2e / 1000;		
 			
 		}
-		
-		
-	
-		
+			
 		return Math.round((distance * co2e) * 10.0) / 10.0;
 
 	}
@@ -94,66 +79,9 @@ public class C02EmissionCalculator {
 		return co2 + output;
 
 	}
-	//Concatenate unit when output unit is absent and emission is double 
-	private String appendUnit(HashMap<String, String> inp, Double co2) {
-
-		String uod = inp.get("--unit-of-distance");
-
-		if (uod == null || uod.equalsIgnoreCase("km")) {
-
-			return co2 + "kg";
-		} else {
-			return co2 + "g";
-		}
-
-	}
-	//Concatenate unit when output unit is absent and emission is integer 
-	private String appendUnit(HashMap<String, String> inp, Integer co2) {
-
-		String uod = inp.get("--unit-of-distance");
-
-		if (uod == null || uod.equalsIgnoreCase("km")) {
-
-			return co2 + "kg";
-		} else {
-			return co2 + "g";
-		}
-
-	}
-
-	public String processemission(String[] args) {
-		Double calculatedco2 = 0.0;
-		HashMap<String, String> inp = getcommandlineargs(args);
-		String op = inp.get("--output");
-		if (op == null) {
-			calculatedco2 = calcuateco2(inp, new TransportFactory());
-
-			String text = Double.toString(Math.abs(calculatedco2));
-			int integerPlaces = text.indexOf('.');
-			if (text.charAt(integerPlaces + 1) == '0') {
-
-				return appendUnit(inp, calculatedco2.intValue());
-
-			}
-
-			return appendUnit(inp, calculatedco2);
-		} else {
-			calculatedco2 = calcuateco2foroutput(inp, new TransportFactory());
-			String text = Double.toString(Math.abs(calculatedco2));
-			int integerPlaces = text.indexOf('.');
-			if (text.charAt(integerPlaces + 1) == '0') {
-
-				return appendUnit(inp, calculatedco2.intValue(), op);
-
-			}
-			return appendUnit(inp, calculatedco2, op);
-		}
-	
-	}
-	
-	public String processemission1(String[] args) {
-		Double calculatedco2 = 0.0;
-		HashMap<String, String> inp = getcommandlineargs(args);
+	//Filling up unit names for easy calculation
+	private void updateInputMap(HashMap<String,String> inp) {
+		
 		String output = inp.get("--output");
 		String uod = inp.get("--unit-of-distance");
 		if(output == null && uod == null )
@@ -176,8 +104,29 @@ public class C02EmissionCalculator {
 			
 			inp.put("--unit-of-distance","km");
 		}
-    		
-			calculatedco2 = calcuateco2foroutput(inp, new TransportFactory());
+		
+	}
+	public Boolean validateInputs(HashMap<String, String> inp)
+	{
+		if(inp.get("--distance") == null || inp.get("--transportation-method") == null
+				||inp.get("--distance").isEmpty() ||inp.get("--transportation-method").isEmpty() ) {
+			
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+	//Process steps one by one 
+	public String processSteps(String[] args) {
+		Double calculatedco2 = 0.0;
+		HashMap<String, String> inp = convertInputsToHashMap(args);
+		updateInputMap(inp);
+	 
+    	if(validateInputs(inp))	
+    	{
+			calculatedco2 = calcuateCo2(inp, new TransportFactory());
 			String text = Double.toString(Math.abs(calculatedco2));
 			int integerPlaces = text.indexOf('.');
 			if (text.charAt(integerPlaces + 1) == '0') {
@@ -186,15 +135,37 @@ public class C02EmissionCalculator {
 
 			}
 			return appendUnit(inp, calculatedco2, inp.get("--output"));
-
+    	}
+    	else
+    	{
+    		return null;
+    	}
 	
 	}
 
 	public static void main(String[] args) {
+		try
+		{
 		C02EmissionCalculator co2emissioncalc = new C02EmissionCalculator();
-		String calculatedco2 = co2emissioncalc.processemission(args);
-
+		
+		String calculatedco2 = co2emissioncalc.processSteps(args);
+		
+		
+      if(calculatedco2 != null)
+      {
+    	     
 		System.out.println("Your trip caused" + " " + calculatedco2 + " " + "of CO2-equivalent.");
+      }
+      else
+      {
+    	  System.out.println("Incorrect inputs:Distance or Transportation method fields is/are empty");
+      }
+      
+		}
+		catch(Exception e) {
+			
+			System.out.println(e.getMessage());
+		}
 
 	}
 
