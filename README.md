@@ -21,12 +21,12 @@
 **If you prefer eclipse Dev 2019-12 for Java**
   1. Open eclipse Dev 2019-12. 
   2. File -> Import->project as a maven project.
-  3. Once imported right click -> select run and select maven clean.
+  3. Once imported right click -> select runAs and select maven clean.
   4. Select maven install to install dependencies
   5. Select maven test to run the unit tests or run Junit Test
-  6. if you want to run the application right click run 
+  6. if you want to run the application right click runAs -> Run Configurations
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNzYyNzkyNCwtMTIyNTE0Mzk0OSwxOT
+eyJoaXN0b3J5IjpbLTM5NjI3NzA1NywtMTIyNTE0Mzk0OSwxOT
 Y4NzcyMzI1LC0xMTAwMzY3NDgzXX0=
 -->
