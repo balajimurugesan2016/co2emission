@@ -18,9 +18,10 @@
  4. Execute **mvn test** if you want to run the unit test separately 
  5. To execute the program use **mvn exec:java -Dexec.mainClass="com.sap.co2calculator.main.C02EmissionCalculator" -Dexec.args="--transportation-method train --distance 14.5  --output kg"**
  
-**If you prefer eclipse:**
- 
+**If you prefer eclipse Dev 2019-12:**
+ 1) Open eclipse 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDAzNjc0ODNdfQ==
+eyJoaXN0b3J5IjpbLTIxMzc4ODkxNTEsLTExMDAzNjc0ODNdfQ
+==
 -->
