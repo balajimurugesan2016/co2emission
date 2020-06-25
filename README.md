@@ -12,8 +12,8 @@
 ## **STEPS TO RUN THE APPLICATION**
 
  1. Unpack the application from zip and extract.
- 2. 
+ 2. Navigate to the folder where the sources are present
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNTU1NTk4MywtNzY5NDg1MzE2XX0=
+eyJoaXN0b3J5IjpbMTQxMzc0NzYxMywtNzY5NDg1MzE2XX0=
 -->
