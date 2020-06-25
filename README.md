@@ -18,13 +18,14 @@
  4. Execute **mvn test** if you want to run the unit test separately 
  5. To execute the program use **mvn exec:java -Dexec.mainClass="com.sap.co2calculator.main.C02EmissionCalculator" -Dexec.args="--transportation-method train --distance 14.5  --output kg"**
  
-**If you prefer eclipse Dev 2019-12:**
+**If you prefer eclipse Dev 2019-12 for Java**
   1. Open eclipse Dev 2019-12. 
   2. File -> Import->project as a maven project.
-  3. Once imported right click and select maven clean.
-  4.
+  3. Once imported right click -> select run and select maven clean.
+  4. Select maven install to install dependencies
+  5. Select maven
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjUxNDM5NDksMTk2ODc3MjMyNSwtMT
-EwMDM2NzQ4M119
+eyJoaXN0b3J5IjpbLTk2OTI1NzE2MywtMTIyNTE0Mzk0OSwxOT
+Y4NzcyMzI1LC0xMTAwMzY3NDgzXX0=
 -->
