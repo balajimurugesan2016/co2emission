@@ -11,7 +11,7 @@
 
 ## **STEPS TO RUN THE APPLICATION**
 
-**If you prefer command line **
+**If you prefer command line** 
  1. Unpack the application from zip and extract.
  2. Navigate to the main directory where the sources are present,    where you see the POM.xml file
  3. Execute **mvn clean install** or **mvn clean install -DskipTests**(skip tests)  from the command line., This will install dependencies for you(make sure to connect to the internet)
@@ -30,5 +30,5 @@
   
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MjAwNjY1OV19
+eyJoaXN0b3J5IjpbODUzMDcyNjQzLDE2NjIwMDY2NTldfQ==
 -->
