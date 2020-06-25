@@ -22,23 +22,21 @@ import com.sap.transport.other.Train;
 import com.sap.transportInterfaces.Transport;
 
 public class TransportFactory {
-	
-	
-	
+
 	public Transport getTransport(String name) {
-		
-		switch(name) {
-		
+
+		switch (name) {
+
 		case ("small-diesel-car"):
 			return new SmallDieselCar();
 		case ("small-petrol-car"):
-			return new SmallPetrolCar();	
+			return new SmallPetrolCar();
 		case ("small-plugin-hybrid-car"):
 			return new SmallPluginHybridCar();
 		case ("small-electric-car"):
 			return new SmallElectricCar();
 		case ("medium-diesel-car"):
-			return  new MediumDieselCar();
+			return new MediumDieselCar();
 		case ("medium-petrol-car"):
 			return new MediumPetrolCar();
 		case ("medium-plugin-hybrid-car"):
@@ -46,7 +44,7 @@ public class TransportFactory {
 		case ("medium-electric-car"):
 			return new MediumElectricCar();
 		case ("large-diesel-car"):
-			return new  LargeDieselCar();
+			return new LargeDieselCar();
 		case ("large-petrol-car"):
 			return new LargepetrolCar();
 		case ("large-plugin-hybrid-car"):
@@ -59,12 +57,9 @@ public class TransportFactory {
 			return new Train();
 		default:
 			return null;
-			
-		
-		
+
 		}
-		
-		
+
 	}
 
 }
