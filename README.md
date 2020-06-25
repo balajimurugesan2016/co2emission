@@ -24,9 +24,11 @@
   3. Once imported right click -> select runAs and select maven clean.
   4. Select maven install to install dependencies
   5. Select maven test to run the unit tests or run Junit Test
-  6. if you want to run the application right click runAs -> Run Configurations
+  6. if you want to run the application right click runAs -> Run Configurations.
+  7. Choose the correct  name C02EmissionCalculator on the left pane 
+  8. On the right pane add the program arguments 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5NjI3NzA1NywtMTIyNTE0Mzk0OSwxOT
-Y4NzcyMzI1LC0xMTAwMzY3NDgzXX0=
+eyJoaXN0b3J5IjpbLTExNjExNDYyMDQsLTEyMjUxNDM5NDksMT
+k2ODc3MjMyNSwtMTEwMDM2NzQ4M119
 -->
